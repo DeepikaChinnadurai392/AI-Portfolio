@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+html,body{
+  width: 100%;
+    background:#050816;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+}
+section{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+}

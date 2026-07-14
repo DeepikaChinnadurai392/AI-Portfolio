@@ -1,0 +1,238 @@
+.skills{
+    position:relative;
+    margin:70px 5%;
+    padding:90px 8%;
+    background:#050816;
+    border:1px solid rgba(108,99,255,.2);
+    border-radius:30px;
+    overflow:hidden;
+    color:white;
+    transition:.4s;
+}
+
+.skills:hover{
+    border-color:#6c63ff;
+    box-shadow:0 0 40px rgba(108,99,255,.2);
+}
+
+.top-left{
+    position:absolute;
+    top:18px;
+    left:18px;
+    width:80px;
+    height:80px;
+    border-top:3px solid #6c63ff;
+    border-left:3px solid #6c63ff;
+    border-radius:20px 0 0 0;
+}
+
+.top-right{
+    position:absolute;
+    top:18px;
+    right:18px;
+    width:80px;
+    height:80px;
+    border-top:3px solid #38bdf8;
+    border-right:3px solid #38bdf8;
+    border-radius:0 20px 0 0;
+}
+
+.bottom-left{
+    position:absolute;
+    bottom:18px;
+    left:18px;
+    width:80px;
+    height:80px;
+    border-bottom:3px solid #38bdf8;
+    border-left:3px solid #38bdf8;
+    border-radius:0 0 0 20px;
+}
+
+.bottom-right{
+    position:absolute;
+    bottom:18px;
+    right:18px;
+    width:80px;
+    height:80px;
+    border-bottom:3px solid #6c63ff;
+    border-right:3px solid #6c63ff;
+    border-radius:0 0 20px 0;
+}
+
+.corner::after{
+    content:"";
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:#38bdf8;
+    border-radius:50%;
+    box-shadow:0 0 15px #38bdf8;
+}
+
+.top-left::after{
+    top:-6px;
+    left:-6px;
+}
+
+.top-right::after{
+    top:-6px;
+    right:-6px;
+}
+
+.bottom-left::after{
+    bottom:-6px;
+    left:-6px;
+}
+
+.bottom-right::after{
+    bottom:-6px;
+    right:-6px;
+}
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    border:2px solid rgba(108,99,255,.08);
+}
+
+.circle.one{
+    width:280px;
+    height:280px;
+    top:-120px;
+    right:-80px;
+    animation:float1 12s linear infinite;
+}
+
+.circle.two{
+    width:180px;
+    height:180px;
+    bottom:-70px;
+    left:-60px;
+    border-color:rgba(56,189,248,.08);
+    animation:float2 10s linear infinite;
+}
+
+@keyframes float1{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+@keyframes float2{
+    0%{transform:rotate(360deg);}
+    100%{transform:rotate(0deg);}
+}
+
+.skills h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+}
+
+.skill-card{
+    background:rgba(17,24,39,.85);
+    border:1px solid #374151;
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(10px);
+    transition:.35s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    border-color:#6c63ff;
+    box-shadow:0 15px 35px rgba(108,99,255,.25);
+}
+
+.skill-card h3{
+    color:#38bdf8;
+    margin-bottom:25px;
+    font-size:24px;
+}
+
+.skill-item{
+    margin-bottom:22px;
+}
+
+.skill-name{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.skill-bar{
+    width:100%;
+    height:12px;
+    background:#1f2937;
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.skill-progress{
+    height:100%;
+    border-radius:30px;
+    background:linear-gradient(90deg,#6c63ff,#38bdf8);
+    box-shadow:0 0 12px rgba(108,99,255,.6);
+}
+
+.ai-card{
+    grid-column:1/3;
+    display:flex;
+    justify-content:center;
+}
+
+.ai-card .skill-card{
+    width:55%;
+}
+
+@media(max-width:900px){
+
+.skills-grid{
+grid-template-columns:1fr;
+}
+
+.ai-card{
+grid-column:auto;
+}
+
+.ai-card .skill-card{
+width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.skills{
+padding:70px 6%;
+margin:40px 15px;
+}
+
+.skills h2{
+font-size:32px;
+}
+
+.skill-card{
+padding:22px;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right{
+width:50px;
+height:50px;
+}
+
+.circle{
+display:none;
+}
+
+}

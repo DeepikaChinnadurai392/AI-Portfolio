@@ -1,0 +1,116 @@
+.footer {
+  padding: 70px 8% 25px;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+
+/* Main Footer Area */
+
+.footer h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+
+.footer p {
+  color: #cbd5e1;
+  font-size: 17px;
+}
+
+
+/* Navigation Links */
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 35px 0;
+  flex-wrap: wrap;
+}
+
+
+.footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+  color: #38bdf8;
+}
+
+
+/* Social Icons */
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+
+.social-links a {
+  color: white;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+
+.social-links a:hover {
+  color: #6c63ff;
+  transform: translateY(-5px);
+}
+
+
+/* Line Before Copyright */
+
+.copyright {
+  border-top: 1px solid #374151;
+  padding-top: 25px;
+  margin-top: 30px;
+  color: #94a3b8 !important;
+  font-size: 14px !important;
+}
+
+
+/* Small Glow Effect */
+
+.footer::before {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #6c63ff,
+    transparent
+  );
+  margin: 0 auto 50px;
+}
+
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .footer {
+    padding: 60px 5% 25px;
+  }
+
+  .footer h2 {
+    font-size: 26px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+}
