@@ -36,7 +36,7 @@ function Hero() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/chat",
+        "https://ai-portfolio-backend-fb4s.onrender.com/chat",
         {
           method: "POST",
           headers: {
