@@ -6,10 +6,10 @@ function Projects() {
   const [visibleCards, setVisibleCards] = useState(1);
 
   const showNextCard = () => {
-    if (visibleCards < 4) {
+    if (visibleCards < projects.length) {
       setVisibleCards(visibleCards + 1);
     }
-  };
+};
 
 const projects = [
   {
@@ -49,6 +49,26 @@ const projects = [
     github: "https://github.com/DeepikaChinnadurai392/Loan-file",
     demo: "#",
   },
+  {
+  title: "💰 WalletWave - AI Expense Tracker",
+  description:
+    "A full-stack expense management application that helps users track income, expenses, savings and visualize financial insights.",
+  tech: "React • Node.js • Express • MySQL • JWT",
+  github:
+    "https://github.com/DeepikaChinnadurai392/WalletWave",
+  demo:
+    "https://walletwave-frontend-drab.vercel.app/",
+},
+{
+  title: "💊 AI Pharmaceutical Complaint Management System",
+  description:
+    "An AI-powered pharmaceutical complaint management system that analyzes complaints, generates corrected reports, performs risk assessment, creates summaries, and identifies missing information using Generative AI.",
+  tech: "React • FastAPI • Python • Groq AI • Axios • Vercel • Render",
+  github:
+    "https://github.com/DeepikaChinnadurai392/AI-Complaint-System",
+  demo:
+    "https://ai-complaint-system-nine.vercel.app/",
+},
 ];
 
   return (
@@ -111,7 +131,7 @@ const projects = [
 
 </div>
 
-            {index !== 3 && (
+            {index !== projects.length - 1 && (
               <div className="click-text">
                 Click to View Next Project →
               </div>
