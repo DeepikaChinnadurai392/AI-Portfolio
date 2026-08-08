@@ -69,6 +69,16 @@ const projects = [
   demo:
     "https://ai-complaint-system-nine.vercel.app/",
 },
+{
+  title: "🚀 TechNova",
+  description:
+    "A modern technology website showcasing digital solutions, innovative services, future technologies, and interactive user experiences.",
+  tech: "React • Vite • Tailwind CSS • Framer Motion",
+  github:
+    "https://github.com/DeepikaChinnadurai392/TechNova",
+  demo:
+    "https://technova-three-tau.vercel.app/",
+},
 ];
 
   return (
